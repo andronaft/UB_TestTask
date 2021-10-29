@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "d43031a2-1dc5-480a-b308-31170d1d9439",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"assignment-test@ubsend.com\",\n    \"password\": \"p0DrmE)E+BQH$]KasMSb\",\n    \"сlientID:\": \"15342\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://staging-api.ubsend.io/v1/auth/login",
+					"protocol": "https",
+					"host": [
+						"staging-api",
+						"ubsend",
+						"io"
+					],
+					"path": [
+						"v1",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJraWQiOiJiaXUrcFM0a3p4cDhnNDQyV21SZHZYQjNVWWpSemFsVWx4ZDhkOHoxRnM4PSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJjNjk0NDhhMC04ZDhkLTQwNTctYWZhZC03NjQzNzIyZGI2MDEiLCJldmVudF9pZCI6ImE4YWU5ZTUzLWExNzEtNDM3Zi04M2M1LTI4MTQ1ODFmOTYzNyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2MzU1MDE3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5ldS13ZXN0LTEuYW1hem9uYXdzLmNvbVwvZXUtd2VzdC0xXzVrSVhybVc1NyIsImV4cCI6MTYzNTUwNTMzNSwiaWF0IjoxNjM1NTAxNzM1LCJqdGkiOiIyZjRkNjgzNC0zNjgwLTQxMDktOGJjOS1hZmUwNjRjNzE3NjkiLCJjbGllbnRfaWQiOiI3cWxmaDJtbzFhYXJhamxtMHZkZTdrNDBycyIsInVzZXJuYW1lIjoiYXNzaWdubWVudC10ZXN0QHVic2VuZC5jb20ifQ.h7xxD9s3GEgXuT0tdfoeK3jwbH4z0u_OauDGy66xFVrKxDkSAfBIMk93swvGxsElONKvaZB5k60LaVeGfxP1CyfN-oqF64CZE8JNc6DbtZSVN4xJtzN9fBFU11_N1h0sHKC6DQI1qyQYFQnYmOPIHwLBBgt9hDfGXcEYaMkTEwf7vTk9LM7E-TZXzbgEONr7Ayu8O-G5OXC1Hi2_mxijQ7aHjcuCYNDJ51ts65jW1uEQ4c_MS2j4SlWI3cV5Gx-OWU_XM1m5H9HILNZ0Szr4BmESAAzXlxoA7gutP4dyNEBaaSYzmaS1FBTpvudyMs--a8UyeB1Q8dXn1LPv_kC1aA",
+						"type": "text"
+					},
+					{
+						"key": "ClientId",
+						"value": "15342",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://staging-api.ubsend.io/v1/parcel-shops/parcel-shops?radius=10000&carrier=CORREOS&country=ES&limit=10",
+					"protocol": "https",
+					"host": [
+						"staging-api",
+						"ubsend",
+						"io"
+					],
+					"path": [
+						"v1",
+						"parcel-shops",
+						"parcel-shops"
+					],
+					"query": [
+						{
+							"key": "radius",
+							"value": "10000"
+						},
+						{
+							"key": "carrier",
+							"value": "CORREOS"
+						},
+						{
+							"key": "country",
+							"value": "ES"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJraWQiOiJiaXUrcFM0a3p4cDhnNDQyV21SZHZYQjNVWWpSemFsVWx4ZDhkOHoxRnM4PSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJjNjk0NDhhMC04ZDhkLTQwNTctYWZhZC03NjQzNzIyZGI2MDEiLCJldmVudF9pZCI6ImE4YWU5ZTUzLWExNzEtNDM3Zi04M2M1LTI4MTQ1ODFmOTYzNyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2MzU1MDE3MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5ldS13ZXN0LTEuYW1hem9uYXdzLmNvbVwvZXUtd2VzdC0xXzVrSVhybVc1NyIsImV4cCI6MTYzNTUwNTMzNSwiaWF0IjoxNjM1NTAxNzM1LCJqdGkiOiIyZjRkNjgzNC0zNjgwLTQxMDktOGJjOS1hZmUwNjRjNzE3NjkiLCJjbGllbnRfaWQiOiI3cWxmaDJtbzFhYXJhamxtMHZkZTdrNDBycyIsInVzZXJuYW1lIjoiYXNzaWdubWVudC10ZXN0QHVic2VuZC5jb20ifQ.h7xxD9s3GEgXuT0tdfoeK3jwbH4z0u_OauDGy66xFVrKxDkSAfBIMk93swvGxsElONKvaZB5k60LaVeGfxP1CyfN-oqF64CZE8JNc6DbtZSVN4xJtzN9fBFU11_N1h0sHKC6DQI1qyQYFQnYmOPIHwLBBgt9hDfGXcEYaMkTEwf7vTk9LM7E-TZXzbgEONr7Ayu8O-G5OXC1Hi2_mxijQ7aHjcuCYNDJ51ts65jW1uEQ4c_MS2j4SlWI3cV5Gx-OWU_XM1m5H9HILNZ0Szr4BmESAAzXlxoA7gutP4dyNEBaaSYzmaS1FBTpvudyMs--a8UyeB1Q8dXn1LPv_kC1aA",
+						"type": "text"
+					},
+					{
+						"key": "ClientId",
+						"value": "15342",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://staging-api.ubsend.io/v1/carrier-configuration/carriers",
+					"protocol": "https",
+					"host": [
+						"staging-api",
+						"ubsend",
+						"io"
+					],
+					"path": [
+						"v1",
+						"carrier-configuration",
+						"carriers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MyAuth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/api/v1/auth/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MyGetParecelShops",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/api/v1/parcel-shop/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"parcel-shop",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
